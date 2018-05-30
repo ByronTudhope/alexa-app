@@ -1,6 +1,6 @@
 <?php
 
-namespace Develpr\Tests;
+namespace ByronTudhope\Tests;
 
 use Carbon\Carbon;
 use PHPUnit\Framework\TestCase;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Develpr\AlexaApp\Exceptions;
+namespace ByronTudhope\AlexaApp\Exceptions;
 
 class InvalidRequestTimestamp extends AlexaException
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Develpr\AlexaApp\Contracts;
+namespace ByronTudhope\AlexaApp\Contracts;
 
 use Illuminate\Contracts\Support\Arrayable;
 

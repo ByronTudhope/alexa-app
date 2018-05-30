@@ -1,8 +1,8 @@
 <?php
 
-namespace Develpr\AlexaApp\Http\Routing;
+namespace ByronTudhope\AlexaApp\Http\Routing;
 
-use Develpr\AlexaApp\Response\AlexaResponse;
+use ByronTudhope\AlexaApp\Response\AlexaResponse;
 use Illuminate\Routing\Router as IlluminateRouter;
 use Alexa;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Develpr\AlexaApp;
+namespace ByronTudhope\AlexaApp;
 
 use Laravel\Lumen\Application;
 

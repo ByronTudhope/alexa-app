@@ -1,9 +1,9 @@
 <?php
 
-namespace Develpr\Tests\Response\Directives\Dialog;
+namespace ByronTudhope\Tests\Response\Directives\Dialog;
 
-use Develpr\AlexaApp\Response\Directives\Dialog\Delegate;
-use Develpr\Tests\BaseTestCase;
+use ByronTudhope\AlexaApp\Response\Directives\Dialog\Delegate;
+use ByronTudhope\Tests\BaseTestCase;
 
 class DelegateDirectiveTest extends BaseTestCase
 {

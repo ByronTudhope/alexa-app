@@ -1,10 +1,10 @@
 <?php
 
-namespace Develpr\Tests\Response\Directives\Dialog;
+namespace ByronTudhope\Tests\Response\Directives\Dialog;
 
-use Develpr\AlexaApp\Request\AlexaRequest;
-use Develpr\AlexaApp\Response\Directives\Dialog\DialogDirective;
-use Develpr\Tests\BaseTestCase;
+use ByronTudhope\AlexaApp\Request\AlexaRequest;
+use ByronTudhope\AlexaApp\Response\Directives\Dialog\DialogDirective;
+use ByronTudhope\Tests\BaseTestCase;
 use Mockery\MockInterface;
 
 class DialogDirectiveTest extends BaseTestCase

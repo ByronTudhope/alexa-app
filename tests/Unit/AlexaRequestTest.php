@@ -1,10 +1,10 @@
 <?php
 
-namespace Develpr\Tests\Unit;
+namespace ByronTudhope\Tests\Unit;
 
 use Carbon\Carbon;
-use Develpr\AlexaApp\Request\AlexaRequest;
-use Develpr\Tests\BaseTestCase;
+use ByronTudhope\AlexaApp\Request\AlexaRequest;
+use ByronTudhope\Tests\BaseTestCase;
 use Mockery;
 
 class AlexaRequestTest extends BaseTestCase
@@ -18,7 +18,7 @@ class AlexaRequestTest extends BaseTestCase
         $this->requestData = $this->intentRequestStub('GetDate', null, 'IN_PROGRESS');
 
         // Partial mock the request object so we can fake the request data
-        $this->request = Mockery::mock('Develpr\AlexaApp\Request\AlexaRequest[getContent]');
+        $this->request = Mockery::mock('ByronTudhope\AlexaApp\Request\AlexaRequest[getContent]');
 
         $this->request->shouldReceive('getContent')
             ->once()

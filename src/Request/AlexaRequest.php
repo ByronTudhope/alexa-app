@@ -1,10 +1,10 @@
 <?php
 
-namespace Develpr\AlexaApp\Request;
+namespace ByronTudhope\AlexaApp\Request;
 
 use Illuminate\Http\Request;
 
-class AlexaRequest extends Request implements \Develpr\AlexaApp\Contracts\AlexaRequest
+class AlexaRequest extends Request implements \ByronTudhope\AlexaApp\Contracts\AlexaRequest
 {
     const CONFIRMED_STATUS = 'CONFIRMED';
     const DENIED_STATUS = 'DENIED';

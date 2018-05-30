@@ -1,8 +1,8 @@
 <?php
 
-namespace Develpr\AlexaApp\Device;
+namespace ByronTudhope\AlexaApp\Device;
 
-use Develpr\AlexaApp\Contracts\AmazonEchoDevice;
+use ByronTudhope\AlexaApp\Contracts\AmazonEchoDevice;
 
 class GenericDevice implements AmazonEchoDevice
 {

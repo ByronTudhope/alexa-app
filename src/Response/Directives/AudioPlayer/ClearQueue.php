@@ -1,8 +1,8 @@
 <?php
 
-namespace Develpr\AlexaApp\Response\Directives\AudioPlayer;
+namespace ByronTudhope\AlexaApp\Response\Directives\AudioPlayer;
 
-use Develpr\AlexaApp\Response\Directives\Directive;
+use ByronTudhope\AlexaApp\Response\Directives\Directive;
 
 class ClearQueue extends Directive
 {

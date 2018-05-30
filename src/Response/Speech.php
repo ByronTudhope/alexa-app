@@ -1,8 +1,8 @@
 <?php
 
-namespace Develpr\AlexaApp\Response;
+namespace ByronTudhope\AlexaApp\Response;
 
-use Develpr\AlexaApp\Contracts\OutputSpeech;
+use ByronTudhope\AlexaApp\Contracts\OutputSpeech;
 
 class Speech implements OutputSpeech
 {

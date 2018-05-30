@@ -46,7 +46,7 @@ After installing via composer (i.e. `composer require develpr/alexa-app`):
 
 ### 1 : Auto-load the appropriate service provider for your framework
 
-The `Develpr\AlexaApp\Provider\LaravelServiceProvider` needs to be added to the array of auto-loaded service providers
+The `ByronTudhope\AlexaApp\Provider\LaravelServiceProvider` needs to be added to the array of auto-loaded service providers
 
 #### Laravel
 
@@ -54,7 +54,7 @@ In the `config/app.php` configuration file, add:
 
     'providers' => [
         ...snip...
-        \Develpr\AlexaApp\Provider\LaravelServiceProvider::class,
+        \ByronTudhope\AlexaApp\Provider\LaravelServiceProvider::class,
         ...snip...
     ],
 
@@ -62,12 +62,12 @@ In the `config/app.php` configuration file, add:
 
 In your application's `bootstrap/app.php` file, add:
 
-    $app->register(\Develpr\AlexaApp\Provider\LumenServiceProvider::class);
+    $app->register(\ByronTudhope\AlexaApp\Provider\LumenServiceProvider::class);
 
 
 ### 2: Adding the facades/aliases for `Alexa` and `AlexaRoute` (optional)
 
-This is not required, but it can be very handy. If you'd prefer, you can inject an instance of the `\Develpr\AlexaApp\Alexa` or `\Develpr\AlexaApp\Routing\AlexaRouter` class, or grab them with `$app['alexa']` or $app['alexa.router'], respectively.
+This is not required, but it can be very handy. If you'd prefer, you can inject an instance of the `\ByronTudhope\AlexaApp\Alexa` or `\ByronTudhope\AlexaApp\Routing\AlexaRouter` class, or grab them with `$app['alexa']` or $app['alexa.router'], respectively.
 
 #### Laravel
 
@@ -75,8 +75,8 @@ This is not required, but it can be very handy. If you'd prefer, you can inject 
 
         'aliases' => [
             ...
-            'AlexaRoute' => \Develpr\AlexaApp\Facades\AlexaRouter::class,
-            'Alexa' => \Develpr\AlexaApp\Facades\Alexa::class,
+            'AlexaRoute' => \ByronTudhope\AlexaApp\Facades\AlexaRouter::class,
+            'Alexa' => \ByronTudhope\AlexaApp\Facades\Alexa::class,
             ...
         ],
 
@@ -86,8 +86,8 @@ The truth is I'm not 100% sure if there is an "official" way of adding aliases/f
 
 First make sure aliases/facades are enabled in your `bootstrap/app.php` file by uncommenting `$app->withFacades();` and then after this add
 
-    class_alias(\Develpr\AlexaApp\Facades\AlexaRouter::class, 'AlexaRoute');
-    class_alias(\Develpr\AlexaApp\Facades\Alexa::class, 'Alexa');
+    class_alias(\ByronTudhope\AlexaApp\Facades\AlexaRouter::class, 'AlexaRoute');
+    class_alias(\ByronTudhope\AlexaApp\Facades\Alexa::class, 'Alexa');
 
 For lumen it might be easier to simply use `$app['alexa.router']` or inject an instance of one of the above classes into your class.
 
@@ -105,7 +105,7 @@ To protect **all routes**, in your `app/Http/Kernal.php` file:
 
     protected $middleware = [
         ...
-        \Develpr\AlexaApp\Http\Middleware\Certificate::class,
+        \ByronTudhope\AlexaApp\Http\Middleware\Certificate::class,
         ...
     ];
 
@@ -115,7 +115,7 @@ To protect **all routes**, in your `bootstrap/app.php` file:
 
     $app->middleware([
         ...snip...
-        \Develpr\AlexaApp\Http\Middleware\Certificate::class,
+        \ByronTudhope\AlexaApp\Http\Middleware\Certificate::class,
         ...snip...
     ]);
 
@@ -160,7 +160,7 @@ Essentially, you need to tell Alexa app about where you are persistent and how t
 
 #### Device Provider
 
-Currently only `database` and `eloquent` options are supported, but more providers could easily be supported by implementing the `\Develpr\AlexaApp\Contracts\DeviceProvider` contract.
+Currently only `database` and `eloquent` options are supported, but more providers could easily be supported by implementing the `\ByronTudhope\AlexaApp\Contracts\DeviceProvider` contract.
 
 The default device provider is Eloquent, and there is a sample Device in `/vendor/develpr/alexa-app/Device/Device.php` that can be copied to your `app` directory and modified for your purposes. This model can be thought of as similar to the `User` model provided with a base installation of Laravel.
 
@@ -255,7 +255,7 @@ If the slot is empty, `null` will be returned.  You can change this default valu
 
 ### Responses
 
-You can use this package and the Alexa facade to easily create valid responses from your application, but it's worth knowing about the classes behind the facade. The most important thing to know is that `Alexa::say("Hello");` is simply returning a new `\Develpr\AlexaApp\Response\AlexaResponse` object with a `\Develpr\AlexaApp\Response\Speech` object inside.
+You can use this package and the Alexa facade to easily create valid responses from your application, but it's worth knowing about the classes behind the facade. The most important thing to know is that `Alexa::say("Hello");` is simply returning a new `\ByronTudhope\AlexaApp\Response\AlexaResponse` object with a `\ByronTudhope\AlexaApp\Response\Speech` object inside.
 
 #### Using the Alexa facade/alias
 

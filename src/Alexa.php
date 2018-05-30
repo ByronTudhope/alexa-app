@@ -1,23 +1,23 @@
 <?php
 
-namespace Develpr\AlexaApp;
+namespace ByronTudhope\AlexaApp;
 
-use Develpr\AlexaApp\Contracts\AmazonEchoDevice;
-use Develpr\AlexaApp\Contracts\DeviceProvider;
-use Develpr\AlexaApp\Request\AlexaRequest;
-use Develpr\AlexaApp\Response\AlexaResponse;
-use Develpr\AlexaApp\Response\AudioFile;
-use Develpr\AlexaApp\Response\Card;
-use Develpr\AlexaApp\Response\Directives\AudioPlayer\Play;
-use Develpr\AlexaApp\Response\Directives\AudioPlayer\Stop;
-use Develpr\AlexaApp\Response\Reprompt;
-use Develpr\AlexaApp\Response\Speech;
-use Develpr\AlexaApp\Response\SSML;
+use ByronTudhope\AlexaApp\Contracts\AmazonEchoDevice;
+use ByronTudhope\AlexaApp\Contracts\DeviceProvider;
+use ByronTudhope\AlexaApp\Request\AlexaRequest;
+use ByronTudhope\AlexaApp\Response\AlexaResponse;
+use ByronTudhope\AlexaApp\Response\AudioFile;
+use ByronTudhope\AlexaApp\Response\Card;
+use ByronTudhope\AlexaApp\Response\Directives\AudioPlayer\Play;
+use ByronTudhope\AlexaApp\Response\Directives\AudioPlayer\Stop;
+use ByronTudhope\AlexaApp\Response\Reprompt;
+use ByronTudhope\AlexaApp\Response\Speech;
+use ByronTudhope\AlexaApp\Response\SSML;
 
 class Alexa
 {
     /**
-     * @var \Develpr\AlexaApp\Contracts\AlexaRequest
+     * @var \ByronTudhope\AlexaApp\Contracts\AlexaRequest
      */
     private $alexaRequest;
 
@@ -88,7 +88,7 @@ class Alexa
     }
 
     /**
-     * @return \Develpr\AlexaApp\Contracts\AlexaRequest
+     * @return \ByronTudhope\AlexaApp\Contracts\AlexaRequest
      */
     public function request()
     {
@@ -96,7 +96,7 @@ class Alexa
     }
 
     /**
-     * @return \Develpr\AlexaApp\Response\AlexaResponse
+     * @return \ByronTudhope\AlexaApp\Response\AlexaResponse
      */
     public function response()
     {
@@ -107,7 +107,7 @@ class Alexa
      * @param string $statementWords
      * @param string $speechType
      *
-     * @return \Develpr\AlexaApp\Response\AlexaResponse
+     * @return \ByronTudhope\AlexaApp\Response\AlexaResponse
      */
     public function say($statementWords, $speechType = Speech::DEFAULT_TYPE)
     {
@@ -121,7 +121,7 @@ class Alexa
      * @param string $repromptWords
      * @param string $speechType
      *
-     * @return \Develpr\AlexaApp\Response\AlexaResponse
+     * @return \ByronTudhope\AlexaApp\Response\AlexaResponse
      */
     public function reprompt($statementWords, $repromptWords = ' ', $speechType = Speech::DEFAULT_TYPE)
     {
@@ -133,7 +133,7 @@ class Alexa
     /**
      * @param string $audioURI
      *
-     * @return \Develpr\AlexaApp\Response\AlexaResponse
+     * @return \ByronTudhope\AlexaApp\Response\AlexaResponse
      */
     public function playAudio($audioURI)
     {
@@ -201,7 +201,7 @@ class Alexa
     /**
      * @param string $ssmlValue
      *
-     * @return \Develpr\AlexaApp\Response\AlexaResponse
+     * @return \ByronTudhope\AlexaApp\Response\AlexaResponse
      */
     public function ssml($ssmlValue)
     {
@@ -216,7 +216,7 @@ class Alexa
     /**
      * @param string $question
      *
-     * @return \Develpr\AlexaApp\Response\AlexaResponse
+     * @return \ByronTudhope\AlexaApp\Response\AlexaResponse
      */
     public function ask($question)
     {
@@ -232,7 +232,7 @@ class Alexa
      * @param string $subtitle
      * @param string $content
      *
-     * @return \Develpr\AlexaApp\Response\AlexaResponse
+     * @return \ByronTudhope\AlexaApp\Response\AlexaResponse
      */
     public function card($title = '', $subtitle = '', $content = '')
     {
@@ -246,7 +246,7 @@ class Alexa
     /**
      * @param array $attributes
      *
-     * @return \Develpr\AlexaApp\Contracts\AmazonEchoDevice|null
+     * @return \ByronTudhope\AlexaApp\Contracts\AmazonEchoDevice|null
      */
     public function device($attributes = [])
     {

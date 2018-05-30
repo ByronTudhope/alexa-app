@@ -11,7 +11,7 @@
     ],
     "require": {
          "php": ">=5.5.9",
-         "illuminate/routing": "~5.4"
+         "illuminate/routing": "~5.2"
      },
     "require-dev": {
         "phpunit/phpunit": "~5.7",
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Develpr\\AlexaApp\\": "src"
+            "ByronTudhope\\AlexaApp\\": "src"
         }
     },
     "autoload-dev": {
@@ -27,7 +27,7 @@
             "tests/"
         ],
         "psr-4": {
-            "Develpr\\Tests\\": "tests"
+            "ByronTudhope\\Tests\\": "tests"
         }
     },
     "extra": {
@@ -36,11 +36,11 @@
         },
         "laravel": {
             "providers": [
-                "Develpr\\AlexaApp\\Provider\\LaravelServiceProvider"
+                "ByronTudhope\\AlexaApp\\Provider\\LaravelServiceProvider"
             ],
             "aliases": {
-                "AlexaRoute": "Develpr\\AlexaApp\\Facades\\AlexaRouter",
-                "Alexa": "Develpr\\AlexaApp\\Facades\\Alexa"
+                "AlexaRoute": "ByronTudhope\\AlexaApp\\Facades\\AlexaRouter",
+                "Alexa": "ByronTudhope\\AlexaApp\\Facades\\Alexa"
             }
         }
     }

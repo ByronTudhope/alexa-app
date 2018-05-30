@@ -16,7 +16,7 @@ finder:
   name:
     - "*.php"
   contains:
-    - "Develpr"
+    - "ByronTudhope"
   not-contains:
     - "config"
   path:

@@ -1,9 +1,9 @@
 <?php
 
-namespace Develpr\AlexaApp\Device;
+namespace ByronTudhope\AlexaApp\Device;
 
-use Develpr\AlexaApp\Contracts\AmazonEchoDevice;
-use Develpr\AlexaApp\Contracts\DeviceProvider;
+use ByronTudhope\AlexaApp\Contracts\AmazonEchoDevice;
+use ByronTudhope\AlexaApp\Contracts\DeviceProvider;
 use Illuminate\Database\ConnectionInterface;
 
 class DatabaseDeviceProvider implements DeviceProvider

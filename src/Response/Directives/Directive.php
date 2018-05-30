@@ -1,6 +1,6 @@
 <?php
 
-namespace Develpr\AlexaApp\Response\Directives;
+namespace ByronTudhope\AlexaApp\Response\Directives;
 
 use Illuminate\Contracts\Support\Arrayable;
 

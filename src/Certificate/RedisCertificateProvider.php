@@ -1,8 +1,8 @@
 <?php
 
-namespace Develpr\AlexaApp\Certificate;
+namespace ByronTudhope\AlexaApp\Certificate;
 
-use Develpr\AlexaApp\Contracts\CertificateProvider;
+use ByronTudhope\AlexaApp\Contracts\CertificateProvider;
 use Illuminate\Redis\Database as RedisDatabase;
 
 class RedisCertificateProvider extends BaseCertificateProvider implements CertificateProvider

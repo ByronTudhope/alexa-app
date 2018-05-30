@@ -1,8 +1,8 @@
 <?php
 
-namespace Develpr\AlexaApp\Certificate;
+namespace ByronTudhope\AlexaApp\Certificate;
 
-use Develpr\AlexaApp\Exceptions\InvalidCertificateException;
+use ByronTudhope\AlexaApp\Exceptions\InvalidCertificateException;
 
 abstract class BaseCertificateProvider
 {

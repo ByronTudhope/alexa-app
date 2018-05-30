@@ -1,6 +1,6 @@
 <?php
 
-namespace Develpr\AlexaApp\Facades;
+namespace ByronTudhope\AlexaApp\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

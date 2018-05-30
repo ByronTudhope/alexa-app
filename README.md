@@ -1,6 +1,6 @@
 # AlexaApp
 
-This is a fork of develpr/alexa-app to address compatabbility issues with older versions of Laravel. Please user develpr/alexa-app instead.
+This is a fork of develpr/alexa-app to address compatability issues with older versions of Laravel. Please user develpr/alexa-app instead.
 
 Set of classes to make creating simple Amazon Echo Alexa Apps easier with Laravel and Lumen ([note that 5.2.x Lumen has a known issue that needs addressing](https://github.com/develpr/alexa-app/issues/5))
 
